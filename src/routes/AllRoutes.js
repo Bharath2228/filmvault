@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { MovieList } from "../pages/MovieList";
-import { MovieDetail } from "../pages/MovieDetail";
-import { Search } from "../pages/Search";
-import { PageNotFound } from "../pages/PageNotFound";
+import { MovieList, MovieDetail, Search, PageNotFound } from "../pages";
 
 export const AllRoutes = () => {
   return (
