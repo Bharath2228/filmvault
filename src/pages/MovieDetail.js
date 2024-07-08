@@ -14,11 +14,10 @@ export const MovieDetail = () => {
     async function fetchMovie(){
       const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=eea906a28f0e32b3402e24819c189c0b`)
       const json = await response.json()
-      setData(json);
-      console.log(json)
+      setData(json); 
     }
     fetchMovie();
-  }, [])
+  }, [params.id])
 
   
 
